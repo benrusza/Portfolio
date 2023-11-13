@@ -1,1 +1,1 @@
-[a link](https://benrusza.github.io/Portfolio/)
+https://benrusza.github.io/Portfolio/
