@@ -1,0 +1,51 @@
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 6720px 0px;
+  }
+}
+
+@keyframes bg-scrolling {
+  0% {
+    background-position: 0px 0px;
+  }
+}
+/* Main styles */
+body {
+  color: #777777;
+  text-align: center;
+  background: url("nubes.jpg") repeat 0 0;
+  animation: bg-scrolling-reverse 128s infinite;
+  font-family: arial;
+  animation-timing-function: linear;
+}
+
+
+
+table {
+
+    border-collapse: collapse;
+    border-style: ridge;
+    width: 50%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  table {
+    width: 90%;
+  }
+}
+
+thead{
+    background-color: #00007e;
+    color:white;
+}
+
+th, td {
+    text-align: center;
+}
+
