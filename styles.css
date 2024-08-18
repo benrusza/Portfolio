@@ -10,12 +10,19 @@
   }
 }
 /* Main styles */
+
+@font-face {
+  font-family: "my-arial";
+  src: url("arial.woff") format('woff');
+}
+
+
 body {
   color: #777777;
   text-align: center;
   background: url("nubes.jpg") repeat 0 0;
   animation: bg-scrolling-reverse 128s infinite;
-  font-family: arial;
+  font-family: my-arial;
   animation-timing-function: linear;
 }
 
