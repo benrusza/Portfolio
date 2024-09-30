@@ -18,6 +18,8 @@
 
 
 body {
+  margin: 0;
+  padding: 0;
   color: #777777;
   text-align: center;
   background: url("nubes.jpg") repeat 0 0;
@@ -55,4 +57,48 @@ thead{
 th, td {
     text-align: center;
 }
+
+
+
+
+
+.custom-details {
+  position: relative;
+ 
+}
+
+.details-toggle {
+  display: none;
+}
+
+
+
+
+#start {
+  cursor: pointer;
+  margin-bottom: 0px;
+  background-color:#bebebe;
+}
+
+.content {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  width: 400px;
+  height: 200px;
+  margin-bottom: 20px;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.1s ease-out;
+  opacity: 0;
+}
+
+
+
+.details-toggle:checked + .start + .content {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
 
